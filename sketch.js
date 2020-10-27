@@ -103,6 +103,7 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode === 32){
+      Matter.Body.setPosition(shape,{x:150,y:200});
        slingshot.attach(shape.body);
        gameState = "onSling";
     }
